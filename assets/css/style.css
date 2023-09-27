@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .sidebar {
   height: 100%;
   display: flex;
@@ -10,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 999;
 }
 .sidebar .sidebar__logo {
   position: absolute;
@@ -29,7 +28,30 @@
   align-items: center;
 }
 .sidebar .sidebar__icons div {
+  position: relative;
   margin: 0.85rem 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.sidebar .sidebar__icons div.active svg {
+  fill: #6a369b;
+}
+.sidebar .sidebar__icons div.active::after {
+  content: "";
+  position: absolute;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  background-color: #6a369b;
+  width: 1rem;
+  height: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -0.4rem;
 }
 .sidebar .sidebar__icons div a {
   text-align: center;
@@ -38,10 +60,6 @@
 .sidebar .sidebar__icons div a svg {
   fill: #c8c8c8;
   font-size: 1.35rem;
-}
-.sidebar .sidebar__icons div a svg .active {
-  fill: red;
-  position: absolute;
 }
 .sidebar .sidebar__logout {
   position: absolute;
@@ -86,7 +104,7 @@ header .header__search button {
 header .header__search button svg {
   width: 100%;
   height: 100%;
-  stroke: #4a3c56; /* رنگ آیکون */
+  stroke: #4a3c56;
 }
 header > * {
   margin: 0rem;
@@ -118,4 +136,47 @@ header .header__notification a::before {
   color: #fff;
   font-size: 0.5rem;
   font-weight: bold;
+}
+
+.main {
+  margin-left: 6.5rem;
+  display: grid;
+  grid-template-columns: 80fr 20fr;
+  padding: 1rem 2rem;
+}
+.main__left {
+  margin: 0 2rem;
+}
+.main__left .main__header__left {
+  display: flex;
+  justify-content: space-between;
+}
+.main__left .main__header__left__content-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.main__left .main__header__left__content-caption {
+  color: #b7b7b7;
+}
+.main__left .main__header__left__add {
+  background-color: #6a369b;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main__left .main__header__left__add svg {
+  fill: #fff;
+  font-size: 1.25rem;
+}
+.main .main__right {
+  gap: 0 1rem !important;
 }/*# sourceMappingURL=style.css.map */
