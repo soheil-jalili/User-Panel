@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1;
 }
 .sidebar .sidebar__logo {
   position: absolute;
@@ -17,8 +17,7 @@
   text-align: center;
 }
 .sidebar .sidebar__logo a img {
-  width: 3.5rem;
-  height: 4rem;
+  height: 5rem;
 }
 .sidebar .sidebar__icons {
   position: absolute;

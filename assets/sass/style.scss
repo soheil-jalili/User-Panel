@@ -14,15 +14,14 @@ $headerIconColor: #4a3c56;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1;
   .sidebar__logo {
     position: absolute;
     top: 2rem;
     text-align: center;
     a {
       img {
-        width: 3.5rem;
-        height: 4rem;
+        height: 5rem;
       }
     }
   }
