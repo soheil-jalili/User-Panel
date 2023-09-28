@@ -140,11 +140,8 @@ header .header__notification a::before {
 .main {
   margin-left: 6.5rem;
   display: grid;
-  grid-template-columns: 80fr 20fr;
+  grid-template-columns: 70fr 30fr;
   padding: 1rem 2rem;
-}
-.main__left {
-  margin: 0 2rem;
 }
 .main__left .main__header__left {
   display: flex;
@@ -193,6 +190,7 @@ header .header__notification a::before {
   -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
+  margin: 0 0.5rem;
 }
 .main__left .left__section__folder__item div {
   display: flex;
@@ -272,7 +270,7 @@ header .header__notification a::before {
   font-size: 0.8rem;
 }
 .main .main__right {
-  gap: 0 1rem !important;
+  margin-left: 1rem;
 }
 .main .main__right .doughnut__chart {
   box-shadow: 1px 3px 9px #eee;

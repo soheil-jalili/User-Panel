@@ -167,10 +167,9 @@ header {
 .main {
   margin-left: 6.5rem;
   display: grid;
-  grid-template-columns: 80fr 20fr;
+  grid-template-columns: 70fr 30fr;
   padding: 1rem 2rem;
   &__left {
-    margin: 0 2rem;
     .main__header__left {
       display: flex;
       justify-content: space-between;
@@ -223,6 +222,7 @@ header {
         -moz-border-radius: $itemRadius;
         -ms-border-radius: $itemRadius;
         -o-border-radius: $itemRadius;
+        margin: 0 0.5rem;
         div {
           display: flex;
           justify-content: space-between;
@@ -312,7 +312,7 @@ header {
   }
 
   .main__right {
-    gap: 0 1rem !important;
+    margin-left: 1rem;
     .doughnut__chart {
       box-shadow: $boxShadow #eee;
       padding: 2rem;
