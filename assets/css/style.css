@@ -83,7 +83,7 @@
 header {
   display: flex;
   justify-content: end;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   align-items: center;
 }
 header p {
@@ -152,11 +152,12 @@ header .header__notification a::before {
 }
 .main__left .main__header__left__content-title {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 .main__left .main__header__left__content-caption {
   color: #b7b7b7;
+  font-size: 0.8rem;
 }
 .main__left .main__header__left__add {
   background-color: #6a369b;
@@ -176,6 +177,122 @@ header .header__notification a::before {
   fill: #fff;
   font-size: 1.25rem;
 }
+.main__left .left__section__folder {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__left .left__section__folder__item {
+  background-color: #fff;
+  box-shadow: 1px 3px 9px #eee;
+  padding: 1.5rem;
+  width: 17.5rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.main__left .left__section__folder__item div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+}
+.main__left .left__section__folder__item div svg {
+  cursor: pointer;
+}
+.main__left .left__section__folder__item div .green__folder {
+  fill: #3fb084;
+}
+.main__left .left__section__folder__item div .blue__folder {
+  fill: #8b82eb;
+}
+.main__left .left__section__folder__item div .yellow__folder {
+  fill: #f1b85f;
+}
+.main__left .left__section__folder__item div .more {
+  fill: #c4c4c4;
+  font-size: 1.25rem;
+}
+.main__left .left__section__folder-title {
+  margin: 1rem 0;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+.main__left .left__section__folder-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main__left .left__section__folder-detail h3 {
+  font-weight: 500;
+  color: #464646;
+}
+.main__left .left__section__folder-detail p {
+  color: #b6b6b6;
+  font-size: 0.7rem;
+}
+.main__left .chart {
+  margin: 1.5rem 0;
+  box-shadow: 1px 3px 9px #eee;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.main__left .favorite__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+.main__left .favorite__section__item {
+  box-shadow: 1px 3px 9px #eee;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 0.5rem;
+}
+.main__left .favorite__section__item__right-side h4, .main__left .favorite__section__item__left-side h4 {
+  font-weight: bold;
+}
+.main__left .favorite__section__item__right-side p, .main__left .favorite__section__item__left-side p {
+  margin: 0.5rem 0;
+  color: #b6b6b6;
+  font-size: 0.8rem;
+}
 .main .main__right {
   gap: 0 1rem !important;
+}
+.main .main__right .doughnut__chart {
+  box-shadow: 1px 3px 9px #eee;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+.main .main__right .main__header__left {
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.main .main__right .main__header__left__content-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.main .main__right .main__header__left__content-caption {
+  color: #b7b7b7;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
