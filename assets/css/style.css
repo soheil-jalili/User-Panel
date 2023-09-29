@@ -176,7 +176,8 @@ header .header__notification a::before {
 }
 .main__left .left__section__folder {
   margin: 1.5rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: center;
 }
@@ -270,7 +271,7 @@ header .header__notification a::before {
   font-size: 0.8rem;
 }
 .main .main__right {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 .main .main__right .doughnut__chart {
   box-shadow: 1px 3px 9px #eee;
@@ -298,16 +299,16 @@ header .header__notification a::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
   padding: 0.5rem 1rem;
+  margin: 0 0.26rem;
 }
 .main .main__right .media > * {
-  margin: 0.85rem 0;
+  margin: 0.9rem 0;
   padding: 1.5rem;
 }
 .main .main__right .media__image {
   fill: #3fb084;
-  background-image: linear-gradient(to right, #fff, rgba(63, 176, 133, 0.2392156863));
+  background-image: linear-gradient(to right, #fff, rgba(63, 176, 133, 0.1843137255));
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
@@ -357,7 +358,7 @@ header .header__notification a::before {
 }
 .main .main__right .media__document {
   fill: #3fb084;
-  background-image: linear-gradient(to right, #fff, rgba(63, 176, 133, 0.2392156863));
+  background-image: linear-gradient(to right, #fff, rgba(241, 185, 95, 0.1882352941));
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
@@ -380,4 +381,28 @@ header .header__notification a::before {
 .main .main__right .media__document svg {
   cursor: pointer;
   z-index: 9999;
+}
+.main .main__right .video__section {
+  display: grid;
+  align-items: center;
+  margin: 2.5rem 0.26rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main .main__right .video__section__item {
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+  margin: 0 0.2rem;
+}
+.main .main__right .video__section__item video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

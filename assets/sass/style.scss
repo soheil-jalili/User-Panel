@@ -208,7 +208,8 @@ header {
     // Folder Section
     .left__section__folder {
       margin: $marginItem;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       justify-content: space-between;
       align-items: center;
       // items
@@ -312,7 +313,7 @@ header {
   }
 
   .main__right {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     .doughnut__chart {
       box-shadow: $boxShadow #eee;
       padding: 2rem 0.5rem;
@@ -345,15 +346,16 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0;
       padding: 0.5rem 1rem;
+      margin: 0 0.26rem;
       & > * {
-        margin: 0.85rem 0;
+        margin: 0.9rem 0;
         padding: 1.5rem;
       }
       &__image {
         fill: $greenColor;
-        background-image: linear-gradient(to right, #fff, #3fb0853d);
+        background-image: linear-gradient(to right, #fff, #3fb0852f);
+
         border-radius: $itemRadius;
         -webkit-border-radius: $itemRadius;
         -moz-border-radius: $itemRadius;
@@ -407,7 +409,7 @@ header {
       }
       &__document {
         fill: $greenColor;
-        background-image: linear-gradient(to right, #fff, #3fb0853d);
+        background-image: linear-gradient(to right, #fff, #f1b95f30);
         border-radius: $itemRadius;
         -webkit-border-radius: $itemRadius;
         -moz-border-radius: $itemRadius;
@@ -429,6 +431,32 @@ header {
         svg {
           cursor: pointer;
           z-index: 9999;
+        }
+      }
+    }
+
+    // Video Section
+    .video__section {
+      display: grid;
+      align-items: center;
+      margin: 2.5rem 0.26rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      &__item {
+        border-radius: $itemRadius;
+        -webkit-border-radius: $itemRadius;
+        -moz-border-radius: $itemRadius;
+        -ms-border-radius: $itemRadius;
+        -o-border-radius: $itemRadius;
+        width: 6rem;
+        height: 6rem;
+        overflow: hidden;
+        margin: 0 0.2rem;
+        video {
+          object-fit: cover;
+          width: 6rem;
+          height: 6rem;
+          cursor: pointer;
         }
       }
     }
