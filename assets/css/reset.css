@@ -132,3 +132,7 @@ body {
 body {
   background-color: #fbfbfb;
 }
+
+.mt-top {
+  margin-top: 2.5rem !important;
+}
