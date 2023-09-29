@@ -136,3 +136,18 @@ body {
 .mt-top {
   margin-top: 2.5rem !important;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  flex-shrink: 1 !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -296,7 +296,6 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         margin: 0 0.5rem;
         &__right-side h4,
         &__left-side h4 {
@@ -307,6 +306,23 @@ header {
           margin: 0.5rem 0;
           color: #b6b6b6;
           font-size: 0.8rem;
+        }
+
+        &-profile {
+          width: 95px;
+          display: flex;
+          .swiper-slide {
+            img {
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              cursor: grab;
+            }
+          }
         }
       }
     }

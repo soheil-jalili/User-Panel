@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Panel</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body>
@@ -315,14 +319,89 @@
               <h4>Images</h4>
               <p>2630 Files</p>
             </div>
-            <div class="images"></div>
+
+            <div class="favorite__section__item-profile">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-1.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-2.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-3.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-2.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-1.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
           </div>
           <div class="favorite__section__item">
             <div class="favorite__section__item__right-side">
               <h4>Videos</h4>
               <p>432 Files</p>
             </div>
-            <div class="images"></div>
+            <div class="favorite__section__item-profile">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-1.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-2.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-3.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-2.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/video-poster-1.jpg"
+                      alt="Profile Img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
           </div>
         </section>
       </section>
@@ -442,6 +521,8 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <script>
       const ctx = document.getElementById("myChart");
 
@@ -482,6 +563,14 @@
           scales: {
             y: {},
           },
+        },
+      });
+    </script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

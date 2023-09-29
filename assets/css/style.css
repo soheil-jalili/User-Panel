@@ -270,6 +270,20 @@ header .header__notification a::before {
   color: #b6b6b6;
   font-size: 0.8rem;
 }
+.main__left .favorite__section__item-profile {
+  width: 95px;
+  display: flex;
+}
+.main__left .favorite__section__item-profile .swiper-slide img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: grab;
+}
 .main .main__right {
   margin: 0 1.5rem;
 }
